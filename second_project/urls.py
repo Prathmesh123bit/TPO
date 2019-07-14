@@ -19,5 +19,10 @@ from django.conf.urls import include,url
 from placement_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),#path to which it will be directed mentioned in this path
-    url(r'placement_app/',include('placement_app.urls')) #whatever we want to type on url to display typed it here
+    url(r'placement_app/',include('placement_app.urls')), #whatever we want to type on url to display typed it here
+    url(r'job_app/',include('placement_app.urls')),
+    url(r'Applicant_app/',include('placement_app.urls')),
+    url(r'training_app/',include('placement_app.urls'))
+
+
 ]
